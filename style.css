@@ -1,0 +1,68 @@
+/* Reset default browser styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the banner */
+.banner {
+  background-image: url('banner-image.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+}
+.banner h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.banner p {
+  font-size: 1.5rem;
+}
+
+/* Style the links with a linear-gradient effect */
+a {
+  color: #333;
+  background-image: linear-gradient(to bottom, #ddd, #ddd);
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+a:hover {
+  background-size: 100% 2px;
+}
+
+/* Style the container */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+/* Add media queries for responsiveness */
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1201px) {
+  .container {
+    max-width: 1140px;
+  }
+}
